@@ -1,0 +1,12 @@
+
+<h1>Add Product component</h1>
+
+<form [formGroup]="productRegForm" (ngSubmit)="onSubmitProduct()" class="form">
+  
+    <input type="text" placeholder="Enter Product Name" formControlName="productName">
+    <input type="text" placeholder="Enter Product Type" formControlName="productType">
+    <input type="number" placeholder="Enter Product Price" formControlName="productPrice">
+    <button type="submit">Save Product</button>
+
+</form>
+

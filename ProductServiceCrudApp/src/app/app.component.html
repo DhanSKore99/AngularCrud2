@@ -1,0 +1,10 @@
+
+<div class="maindiv">
+  <div>
+        <app-add-product [productToBeEdit]="editProduct"></app-add-product>
+  </div>
+
+  <div>
+        <app-view-product (editProduct)="patchEditProduct($event)"></app-view-product>
+  </div>
+</div>
